@@ -6,7 +6,9 @@ import { useState } from "react";
 
 export default function ContractsPage() {
   const { data, error, isLoading } = useGetContractsQuery();
+
   const [searchQuery, setSearchQuery] = useState("");
+
   const filteredContracts = data?.length
     ? data.filter((contract) =>
         searchQuery.length >= 2
@@ -32,6 +34,7 @@ export default function ContractsPage() {
           <input
             className={s.contactsInput}
             value={searchQuery}
+            name="search"
             onChange={(event) => setSearchQuery(event.target.value)}
             placeholder="Search Customer"
           />
@@ -39,7 +42,9 @@ export default function ContractsPage() {
         </div>
         <div className={s.contractsBody_items}>
           {filteredContracts?.length
-            ? filteredContracts.map((contract) => <ContractCard key={contract.projectId} contract={contract} />)
+            ? filteredContracts.map((contract) => (
+                <ContractCard key={contract.projectId} contract={contract} />
+              ))
             : null}
         </div>
       </div>

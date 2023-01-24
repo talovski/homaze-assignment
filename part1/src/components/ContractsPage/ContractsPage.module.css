@@ -4,7 +4,6 @@
 }
 
 .contractsHeader {
-  padding-bottom: 8px;
   color: var(--black);
   font-size: 32px;
   font-weight: 600;
@@ -27,8 +26,6 @@
   gap: 26px;
 }
 
-
-
 .contractsInput_container {
   position: relative;
   display: flex;
@@ -45,11 +42,12 @@
   border-radius: 7px;
 }
 
-.contractsInput::placeholder {
-  color: #d5d5d5;
+.contactsInput::placeholder {
+  color: #d6d6d6;
+  font-size: 14px;
 }
 
-.contractsInput_icon{
+.contractsInput_icon {
   position: absolute;
   right: 0;
   width: 16.67px;
