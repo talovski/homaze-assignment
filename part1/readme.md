@@ -30,4 +30,6 @@ Basic responsiveness is implement. However, there is work to be done
 (maybe centering the elements when the screen is small, so it would look better?). 
 But these examples were not provided in the tutorial, so I decided not to implement them on my own.
 
+For prices and currency I used method `toLocaleString`. I made the transformations outside the JSX code to improve readability.
+
 I will be glad to answer any questions regarding the exercise!

@@ -57,7 +57,7 @@ const extractFirstLetters = (param) => {
   }
 }
 
-const someMysticMethod = (param) => {
+const transformExtractedLetters = (param) => {
   if (!param) {
     throw new Error('Error: no input was provided');
   }
