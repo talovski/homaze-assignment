@@ -8,43 +8,43 @@
 }
 
 .progressLabel_inProgress {
-  color: var(--black);
   background-color: var(--bg);
+  color: var(--black);
 }
 
 .progressLabel_negotiation {
-  color: var(--red);
   background-color: var(--red);
+  color: var(--red);
 }
 
 .progressLabel_done {
-  color: var(--green);
   background-color: var(--green-bg);
+  color: var(--green);
 }
 
 .progressLabel_cancelled {
-  color: var(--accent);
   background-color: var(--accent-bg);
+  color: var(--accent);
   font-weight: bold;
 }
 
 .inProgress {
-  color: var(--black);
   background-color: var(--bg);
+  color: var(--black);
 }
 
 .negotiation {
-  color: var(--red);
   background-color: var(--red-bg);
+  color: var(--red);
 }
 
 .done {
-  color: var(--green);
   background-color: var(--green-bg);
+  color: var(--green);
 }
 
 .cancelled {
-  color: var(--accent);
   background-color: var(--accent-bg);
+  color: var(--accent);
   font-weight: bold;
 }

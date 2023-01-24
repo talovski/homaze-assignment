@@ -1,0 +1,5 @@
+{
+  "rules": {},
+  "extends": "stylelint-config-idiomatic-order"
+
+}

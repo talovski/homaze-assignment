@@ -1,55 +1,55 @@
 .cardContainer {
+  overflow: hidden;
   width: 350px;
   min-height: 235px; /* min-height because the list of rooms might take more than one row? */
   border: solid 1px var(--stroke);
   border-radius: 9px;
-  overflow: hidden;
 }
 
 .cardHeader {
-  background-color: var(--bg);
-  padding: 20px 10px 20px;
-  height: 76px;
-  width: 100%;
   display: flex;
+  width: 100%;
+  height: 76px;
   flex-direction: column;
+  padding: 20px 10px 20px;
+  background-color: var(--bg);
 }
 
 .cardHeader__name {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   height: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cardHeader__untitled {
   font-size: 16px;
-  line-height: 20px;
   font-weight: 300;
+  line-height: 20px;
 }
 
 .cardHeader__id {
   font-size: 12px;
+  font-weight: normal;
   line-height: 12px;
   opacity: 0.5;
-  font-weight: normal;
 }
 
 .cardBody {
-  padding: 10px 20px 20px;
   display: flex;
   flex-direction: column;
+  padding: 10px 20px 20px;
   gap: 20px;
 }
 
 .cardBody__address {
-  font-size: 14px;
-  white-space: nowrap;
   overflow: hidden;
+  font-size: 14px;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cardBody__rooms {
@@ -70,19 +70,19 @@
 }
 
 .cardBody__status_item:last-child p {
-  margin-left: 10px;
   display: block;
+  margin-left: 10px;
 }
 
 .cardBody__status_header {
-  font-size: 12px;
   color: #9F9F9F;
+  font-size: 12px;
 }
 
 .cardBody__status_price {
   padding-top: 3px;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
 }
 
 

@@ -5,44 +5,44 @@
 
 .contractsHeader {
   padding-bottom: 8px;
-  letter-spacing: 0.44px;
-  font-weight: 600;
-  font-size: 32px;
   color: var(--black);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.44px;
 }
 
 .contractsBody {
-  background-color: #ffffff;
-  border-radius: 9px;
-  border: solid 1px var(--stroke);
   padding: 27px 30px;
+  border: solid 1px var(--stroke);
+  border-radius: 9px;
+  background-color: #ffffff;
 }
 
 .contractsBody_items {
-  width: 100%;
   display: flex;
-  padding-top: 20px;
+  width: 100%;
   flex-wrap: wrap;
   align-items: flex-start; /* in case there are too many rooms and they span across two lines */
+  padding-top: 20px;
   gap: 26px;
 }
 
 
 
 .contractsInput_container {
-  align-items: center;
   position: relative;
   display: flex;
   max-width: 289px;
+  align-items: center;
 }
 
 .contactsInput {
+  height: 46px;
   flex: 1;
+  align-items: center;
+  padding: 13px 31px 13px 15px;
   border: solid 1px var(--stroke-subtle);
   border-radius: 7px;
-  height: 46px;
-  padding: 13px 31px 13px 15px;
-  align-items: center;
 }
 
 .contractsInput::placeholder {
@@ -52,7 +52,7 @@
 .contractsInput_icon{
   position: absolute;
   right: 0;
-  height: 16.67px;
   width: 16.67px;
+  height: 16.67px;
   margin: 0 14.33px;
 }
