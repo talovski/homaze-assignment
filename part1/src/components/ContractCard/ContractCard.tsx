@@ -5,6 +5,10 @@ import { IContract } from "../../types/contract";
 
 export default function ContractCard({ contract }: { contract: IContract }) {
   const date = new Date(contract.updated_timestmp).toLocaleDateString("en-US").replaceAll("/", ".");
+  const currency = contract.totalProject.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
 
   return (
     <div className={s.cardContainer}>
@@ -30,12 +34,7 @@ export default function ContractCard({ contract }: { contract: IContract }) {
           </div>
           <div className={s.cardBody__status_item}>
             <p className={s.cardBody__status_header}>Price</p>
-            <p className={s.cardBody__status_price}>
-              {contract.totalProject.toLocaleString("en-US", {
-                style: "currency",
-                currency: "USD",
-              })}
-            </p>
+            <p className={s.cardBody__status_price}>{currency}</p>
           </div>
           <div className={s.cardBody__status_item}>
             <p className={s.cardBody__status_header}>Stage</p>

@@ -1,7 +1,7 @@
 import searchIcon from "../../assets/SearchIcon.svg";
 import ContractCard from "../ContractCard/ContractCard";
 import s from "./ContractsPage.module.css";
-import { useGetContractsQuery } from "../../api";
+import { useGetContractsQuery } from "../../app/api";
 import { useState } from "react";
 
 export default function ContractsPage() {
