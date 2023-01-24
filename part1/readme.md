@@ -1,6 +1,6 @@
 # Part 1
 In this assignment I made a web app based on the provided layout and requirements.
-Link to deployed project: https://vercel.com/talovski/homaze-assignment
+Link to deployed project: https://homaze-assignment.vercel.app/
 
 ---
 ## Structure of the project
