@@ -4,15 +4,17 @@ import ProgressLabel from "../ProgressLabel/ProgressLabel";
 import { IContract } from "../../types/contract";
 
 export default function ContractCard({ contract }: { contract: IContract }) {
-  const date = new Date(contract.updated_timestmp).toLocaleDateString('en-US').replaceAll('/', '.');
+  const date = new Date(contract.updated_timestmp).toLocaleDateString("en-US").replaceAll("/", ".");
 
   return (
     <div className={s.cardContainer}>
       <div className={s.cardHeader}>
-        {contract.customerName?.length ?
+        {contract.customerName?.length ? (
           <h2 className={s.cardHeader__name}>{contract.customerName}</h2>
-          : <h2 className={s.cardHeader__untitled}>Untitled</h2>
-        }
+        ) : (
+          <h2 className={s.cardHeader__untitled}>Untitled</h2>
+        )}
+        <p className={s.cardHeader__id}>{contract.projectId}</p>
       </div>
       <div className={s.cardBody}>
         <p className={s.cardBody__address}>{contract.address}</p>
@@ -28,7 +30,12 @@ export default function ContractCard({ contract }: { contract: IContract }) {
           </div>
           <div className={s.cardBody__status_item}>
             <p className={s.cardBody__status_header}>Price</p>
-            <p className={s.cardBody__status_price}>${contract.totalProject}</p>
+            <p className={s.cardBody__status_price}>
+              {contract.totalProject.toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+              })}
+            </p>
           </div>
           <div className={s.cardBody__status_item}>
             <p className={s.cardBody__status_header}>Stage</p>
