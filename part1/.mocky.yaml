@@ -1,8 +1,0 @@
-endpoints:
-  path: /
-  method: get
-  responses:
-    - statusCode: 200
-  body:
-  message: Hello from Mocki!
-
