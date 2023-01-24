@@ -3,7 +3,7 @@ import { IContract } from "../types/contract";
 
 export const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://homaze.free.beeceptor.com/",
+    baseUrl: "api.mocki.io/v2/f78538fa/",
   }),
   endpoints: (build) => ({
     getContracts: build.query<IContract[], void>({
