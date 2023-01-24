@@ -10,10 +10,10 @@
   background-color: var(--bg);
   padding: 20px;
   min-height: 76px;
+  height: 76px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4px;
 }
 
 .cardHeader__name {
@@ -25,10 +25,16 @@
   height: 100%;
 }
 
+.cardHeader__untitled {
+  font-size: 16px;
+  font-weight: 300;
+}
+
 .cardHeader__id {
   font-size: 12px;
   opacity: 0.5;
   font-weight: normal;
+  margin-top: -2px;
 }
 
 .cardBody {
@@ -40,6 +46,9 @@
 
 .cardBody__address {
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cardBody__rooms {
