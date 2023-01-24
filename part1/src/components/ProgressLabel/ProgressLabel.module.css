@@ -1,0 +1,49 @@
+.progressLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 10px;
+  border-radius: 50px;
+}
+
+.progressLabel_inProgress {
+  color: var(--black);
+  background-color: var(--bg);
+}
+
+.progressLabel_negotiation {
+  color: var(--red);
+  background-color: var(--red);
+}
+
+.progressLabel_done {
+  color: var(--green);
+  background-color: var(--green-bg);
+}
+
+.progressLabel_cancelled {
+  color: var(--accent);
+  background-color: var(--accent-bg);
+  font-weight: bold;
+}
+
+.inProgress {
+  color: var(--black);
+  background-color: var(--bg);
+}
+
+.negotiation {
+  color: var(--red);
+  background-color: var(--red-bg);
+}
+
+.done {
+  color: var(--green);
+  background-color: var(--green-bg);
+}
+
+.cancelled {
+  color: var(--accent);
+  background-color: var(--accent-bg);
+  font-weight: bold;
+}

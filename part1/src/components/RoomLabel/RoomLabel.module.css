@@ -1,0 +1,10 @@
+.roomLabel {
+  font-size: 12px;
+  color: var(--accent);
+  background-color: var(--accent-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+}

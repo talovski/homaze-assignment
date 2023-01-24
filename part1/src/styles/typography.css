@@ -1,0 +1,4 @@
+:root {
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.27px; /* default letter spacing, will be overriden when necessary (e.g. titles) */
+}

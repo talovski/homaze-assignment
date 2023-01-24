@@ -1,0 +1,58 @@
+.contractsContainer {
+  max-width: 1164px;
+  margin: 0 auto;
+}
+
+.contractsHeader {
+  padding-bottom: 8px;
+  letter-spacing: 0.44px;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--black);
+}
+
+.contractsBody {
+  background-color: #ffffff;
+  border-radius: 9px;
+  border: solid 1px var(--stroke);
+  padding: 27px 30px;
+}
+
+.contractsBody_items {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start; /* in case there are too many rooms and they span across two lines */
+  gap: 26px;
+}
+
+
+
+.contractsInput_container {
+  align-items: center;
+  position: relative;
+  display: flex;
+  max-width: 289px;
+}
+
+.contactsInput {
+  flex: 1;
+  border: solid 1px var(--stroke-subtle);
+  border-radius: 7px;
+  height: 46px;
+  padding: 13px 31px 13px 15px;
+  align-items: center;
+}
+
+.contractsInput::placeholder {
+  color: #d5d5d5;
+}
+
+.contractsInput_icon{
+  position: absolute;
+  right: 0;
+  height: 16.67px;
+  width: 16.67px;
+  margin: 0 14.33px;
+}
