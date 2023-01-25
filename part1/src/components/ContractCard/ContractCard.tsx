@@ -38,7 +38,9 @@ export default function ContractCard({ contract }: { contract: IContract }) {
           </div>
           <div className={s.cardBody__status_item}>
             <p className={s.cardBody__status_header}>Stage</p>
-            <ProgressLabel status={contract.projectState} />
+            <div className={s.cardBody__status_state}>
+              <ProgressLabel status={contract.projectState} />
+            </div>
           </div>
         </div>
       </div>

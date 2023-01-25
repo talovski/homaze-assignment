@@ -54,6 +54,7 @@
 
 .cardBody__rooms {
   display: flex;
+  flex-wrap: wrap;
   gap: 3px;
 }
 
@@ -74,8 +75,29 @@
   margin-left: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .cardBody__status {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .cardBody__status_item:last-child {
+    padding: 0;
+  }
+
+  .cardBody__status_item:last-child p {
+    display: block;
+    margin-left: 0;
+  }
+
+  .cardBody__status_state {
+    display: block;
+    margin-left: -10px;
+  }
+}
+
 .cardBody__status_header {
-  color: #9F9F9F;
+  color: #9f9f9f;
   font-size: 12px;
 }
 
@@ -84,7 +106,6 @@
   font-size: 14px;
   font-weight: bold;
 }
-
 
 .cardBody__status_date {
   padding-top: 3px;
