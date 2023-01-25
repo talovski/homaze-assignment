@@ -45,24 +45,27 @@ const matchWords = (str) => {
 
 const extractFirstLetters = (param) => {
   let words = matchWords(param)
+
+  if (!words.length) return param.charAt(0)
+
   let firstWord = words[0]
   let lastWord = words[words.length - 1]
 
-  if (words.length > 1) {
-    return [firstWord[1], lastWord[1]]
-  } else if (words.length === 1) {
-    return [firstWord[1]]
-  } else {
-    return ['']
-  }
+  let extractedLetters =
+    words.length > 1 ? firstWord[1] + lastWord[1] : firstWord[1]
+
+  return extractedLetters
 }
 
 const transformExtractedLetters = (param) => {
   if (!param) {
-    throw new Error('Error: no input was provided');
+    console.log('No param was provided')
+    return ''
   }
-  return extractFirstLetters(param).join('').toUpperCase();
+  console.log('result', extractFirstLetters(param).toUpperCase())
+  return extractFirstLetters(param).toUpperCase()
 }
+
 ```
 
 3. This way, we have a better understanding of what is going on in the code.
