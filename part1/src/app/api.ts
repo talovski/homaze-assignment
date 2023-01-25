@@ -3,7 +3,7 @@ import { IContract } from "../types/contract";
 
 export const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://amaze-homaze.free.beeceptor.com",
+    baseUrl: "https://homazing.free.beeceptor.com",
   }),
   endpoints: (build) => ({
     getContracts: build.query<IContract[], void>({

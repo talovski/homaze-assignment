@@ -75,7 +75,7 @@
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 466px) {
   .cardBody__status {
     flex-direction: column;
     gap: 5px;
@@ -92,6 +92,7 @@
 
   .cardBody__status_state {
     display: block;
+    padding-top: 3px;
     margin-left: -10px;
   }
 }
