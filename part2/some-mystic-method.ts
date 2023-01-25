@@ -25,3 +25,5 @@ const someMysticMethod = (param) => {
 }
 
 someMysticMethod('Apple Not Banana')
+someMysticMethod('')
+someMysticMethod('a')
